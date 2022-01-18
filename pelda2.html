@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 .popup {
   position: relative;
   display: inline-block;
@@ -12,6 +13,7 @@
   -ms-user-select: none;
   user-select: none;
 }
+
 
 .popup .popuptext {
   visibility: hidden;
@@ -39,11 +41,13 @@
   border-color: #555 transparent transparent transparent;
 }
 
+
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn 1s;
   animation: fadeIn 1s;
 }
+
 
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
@@ -60,12 +64,12 @@
 
 <h2>Popup</h2>
 
-<div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+<div class="popup" onclick="myFunction()">Kattints rám a popup megnyításához!
+  <span class="popuptext" id="myPopup">Egy egyszerű Popup!</span>
 </div>
 
 <script>
-// When the user clicks on div, open the popup
+
 function myFunction() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
